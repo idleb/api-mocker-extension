@@ -1,0 +1,28 @@
+{
+    "name": "API Mocker",
+    "version": "0.1",
+    "description": "Transfer API docs to Mock.js",
+    "permissions": ["activeTab", "declarativeContent"],
+    "content_scripts": [
+      {
+        "matches": ["http://172.16.10.43:8090/*"],
+        "css": ["mockStyles.css"],
+        "js": ["lodash.min.js","contentScript.js"]
+      }
+    ],
+    "page_action": {
+      "default_icon": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+      }
+    },
+    "icons": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    },
+    "manifest_version": 2
+  }

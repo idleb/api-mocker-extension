@@ -1,13 +1,13 @@
 {
     "name": "API Mocker",
-    "version": "0.1",
+    "version": "1.0",
     "description": "Transfer API docs to Mock.js",
-    "permissions": ["activeTab", "declarativeContent"],
+    "permissions": ["activeTab", "declarativeContent", "storage"],
     "content_scripts": [
       {
         "matches": ["http://172.16.10.43:8090/*"],
         "css": ["mockStyles.css"],
-        "js": ["lodash.min.js","contentScript.js"]
+        "js": ["lodash.min.js","mock.min.js","contentScript.js"]
       }
     ],
     "page_action": {
@@ -24,5 +24,6 @@
       "48": "images/get_started48.png",
       "128": "images/get_started128.png"
     },
+    "options_page": "options.html",
     "manifest_version": 2
   }

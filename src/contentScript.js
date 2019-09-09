@@ -56,9 +56,9 @@ chrome.storage.sync.get({
             }
         })
 
-        var data = {}
-        var nodes = []
         button.addEventListener("click", function (e) {
+            var data = {}
+            var nodes = []
             var btn = e.currentTarget
 
             if (btn.className == "t2m-btn show") {

@@ -5,7 +5,7 @@
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "content_scripts": [
       {
-        "matches": ["http://172.16.10.43:8090/*"],
+        "matches": ["http://wiki.huitong.com/*"],
         "css": ["mockStyles.css"],
         "js": ["lodash.min.js","mock.min.js","contentScript.js"]
       }
